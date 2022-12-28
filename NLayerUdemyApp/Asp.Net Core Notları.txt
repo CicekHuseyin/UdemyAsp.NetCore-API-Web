@@ -1,0 +1,9 @@
+-IEnumerable tipi veriyi önce belleğe atıp ardından bellekteki bu veri üzerinden belirtilen koşulları çalıştırır ve veriye uygular.
+-IQueryable tipinde ise belirtilen sorgular direk olarak server üzerinde çalıştırılır ve dönüş sağlar.
+-Expression fonksiyonunu yazmamızın sebebi veritabanında filtreleme işlemleri yapabilmemi durumunu değiştireceğimiz 
+için async kullanmadık.
+-Kod akışının sırayla işlemediği, işlemlerin birbirini beklemediği, kod akışının işlem durumlarına göre devam ettiği programlamaya Asenkron Programlama denir.
+-Unit Of Work, toplu veritabanı işlemlerini tek seferde bir kereye mahsus execute eden ve böylece bu toplu işlem neticesinde kaç kayıtın etkilendiğini
+rapor olarak sunabilen bir tasarım desenidir. Örneğin repositorylerde Update ve Remove dan sonra SaveChanges() işlemi yaptığımız için bu savechanges leri
+toplu olarak yapmak için UnitOfWork Interface' inden yaralanıyoruz.
+-SaveChanges kullanmaz isek EfCore veriyi memory de yani hafıza da tutar. SaveChanges ile veritabanında işlem görür.
