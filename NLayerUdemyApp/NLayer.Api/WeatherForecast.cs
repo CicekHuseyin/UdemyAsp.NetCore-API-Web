@@ -1,6 +1,4 @@
-using System;
-
-namespace NLayer.Api
+namespace NLayer.API
 {
     public class WeatherForecast
     {

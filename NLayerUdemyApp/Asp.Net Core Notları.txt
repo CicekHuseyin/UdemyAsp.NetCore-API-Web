@@ -7,3 +7,6 @@ için async kullanmadık.
 rapor olarak sunabilen bir tasarım desenidir. Örneğin repositorylerde Update ve Remove dan sonra SaveChanges() işlemi yaptığımız için bu savechanges leri
 toplu olarak yapmak için UnitOfWork Interface' inden yaralanıyoruz.
 -SaveChanges kullanmaz isek EfCore veriyi memory de yani hafıza da tutar. SaveChanges ile veritabanında işlem görür.
+-Dto uygulama katmanları arasında veriyi transfer etmek için kullanılır. Genel olarak database den gelen veriyi source olarak kullanır.
+-Automapper farklı tipteki complex objeleri birbirlerine otomatik olarak dönüştüren kütüphanedir. Kod kirliliğinde bizi kurtarak birden fazla satırda her bir obje elemanını tek tek 
+dönüştürmek yerine tek satırda objenin kendisini dönüştürmemize olanak sağlar.
